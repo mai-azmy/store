@@ -1,0 +1,133 @@
+/* Hero */
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url('../images/store.jpg') center/cover;
+}
+
+/* Product Animation */
+.product-card {
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+
+
+.hover-shadow:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+
+/* === Hero & Product Section Animation === */
+.product-image img {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+.product-image img:hover {
+    transform: scale(1.1) rotate(-1deg);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* === Card Hover Animation for Related Products === */
+.hover-shadow {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-shadow:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* === Button Animation === */
+.btn-success {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-success:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* === Responsive Adjustments === */
+@media(max-width:767px){
+    .product-image img {
+        max-height:300px;
+    }
+    .hover-shadow img {
+        height:120px !important;
+    }
+}
+
+@media(max-width:575px){
+    .product-image img {
+        max-height:250px;
+    }
+    .btn-success {
+        width:100%;
+    }
+}
+
+
+/* cart.css */
+#cartTable input.qty-input {
+    width: 60px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#cartTable input.qty-input:focus {
+    transform: scale(1.1);
+    border-color: #28a745;
+}
+
+.remove-btn {
+    transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+    transform: scale(1.2);
+    background-color: #dc3545;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+table td, table th {
+    vertical-align: middle !important;
+}
+
+@media(max-width:768px){
+    #cartTable th, #cartTable td{
+        font-size: 14px;
+    }
+}
+
+
+/* chech out */
+.checkout-table th, .checkout-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.checkout-table input {
+    width: 60px;
+    text-align: center;
+}
+
+#placeOrder {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+}
